@@ -1,3 +1,5 @@
+My personal neovim configuration based in [LazyVim](https://github.com/LazyVim/LazyVim) and in [@craftdog configuration](https://github.com/craftzdog/dotfiles-public/tree/master/.config/nvim)
+
 # Pre-requisites
 
 1. Install fonts:
