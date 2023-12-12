@@ -27,6 +27,12 @@ At least version 0.9.0 is required.
 - You need to configure in `profiles -> window` the transparency and blur of the window.
   (On the personal computer is set to 18 and 8 respectively).
 
+5. Install optional tools:
+
+```shell
+brew install ripgrep fd
+```
+
 # Installation
 
 1. Clone the repository:
