@@ -47,3 +47,9 @@ end, opts)
 
 -- Navbuddy
 keymap.set("n", "nb", ":Navbuddy<Return>", opts)
+
+-- Tmux navigator
+keymap.set("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>")
+keymap.set("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>")
+keymap.set("n", "<C-j>", "<cmd> TmuxNavigateDown<CR>")
+keymap.set("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>")
