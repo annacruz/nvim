@@ -124,7 +124,7 @@ return {
           },
         },
       }
-      opts.extensions = {
+      opts.extensions = ckoffic({
         file_browser = {
           theme = "dropdown",
           -- disables netrw and use telescope-file-browser in its place
@@ -153,7 +153,7 @@ return {
             },
           },
         },
-      }
+      })
       telescope.setup(opts)
       require("telescope").load_extension("fzf")
       require("telescope").load_extension("file_browser")
