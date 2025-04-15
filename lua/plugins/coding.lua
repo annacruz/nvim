@@ -23,7 +23,7 @@ return {
 
   -- Refactoring tool
   {
-    "ThePrimagen/refactoring.nvim",
+    "ThePrimeagen/refactoring.nvim",
     keys = {
       {
         "<leader>r",
