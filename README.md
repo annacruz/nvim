@@ -45,11 +45,3 @@ git clone git@github.com:annacruz/nvim.git ~/.config/nvim/
 
 3. Initialize neovim and enjoy =)
 
-# Problem solving
-
-If you're facing nvim-treesitter problem on parses execute the following:
-
-```shell
-:TSUpdate <parses_separated_with_spaces>
-```
-
