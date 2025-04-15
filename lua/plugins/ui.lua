@@ -1,6 +1,7 @@
 return {
   {
     "folke/noice.nvim",
+    relodable = true,
     opts = function(_, opts)
       table.insert(opts.routes, {
         filter = {
@@ -49,6 +50,26 @@ return {
       })
 
       opts.presets.lsp_doc_border = true
+    end,
+  },
+
+  {
+    "rcarriga/nvim-notify",
+    relodable = true,
+    opts = {
+      timeout = 10000,
+    },
+  },
+
+  -- animations
+  {
+    "echasnovski/mini.animate",
+    relodable = true,
+    event = "VeryLazy",
+    opts = function(_, opts)
+      opts.scroll = {
+        enable = false,
+      }
     end,
   },
 }
