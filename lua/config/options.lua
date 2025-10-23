@@ -9,3 +9,10 @@ vim.opt.spelllang = { "en_us" }
 -- Undercurl
 vim.cmd([[let &t_Cs = "\e[4:3m"]])
 vim.cmd([[let &t_Ce = "\e[4:0m"]])
+
+-- Asdf/mason
+vim.env.PATH = table.concat({
+  vim.fn.expand("$HOME/.asdf/shims"),
+  vim.fn.expand("~/.local/share/nvim/mason/bin"),
+  vim.env.PATH,
+}, ":")

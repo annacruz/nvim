@@ -49,7 +49,17 @@ end, opts)
 keymap.set("n", "nb", ":Navbuddy<Return>", opts)
 
 -- Tmux navigator
-keymap.set("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>")
-keymap.set("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>")
-keymap.set("n", "<C-j>", "<cmd> TmuxNavigateDown<CR>")
-keymap.set("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>")
+-- keymap.set("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>")
+-- keymap.set("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>")
+-- keymap.set("n", "<C-j>", "<cmd> TmuxNavigateDown<CR>")
+-- keymap.set("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>")
+
+-- copy filename
+keymap.del("n", "<C-f>")  -- remove existing mapping if any
+keymap.set("n", "<C-f>", function()
+  local p = vim.fn.expand("%:.")
+  vim.fn.setreg("+", p)      -- copy to system clipboard on macOS
+  vim.notify("Copied: " .. p)
+end, { desc = "Copy relative file path to clipboard" })
+
+
