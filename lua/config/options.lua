@@ -16,3 +16,6 @@ vim.env.PATH = table.concat({
   vim.fn.expand("~/.local/share/nvim/mason/bin"),
   vim.env.PATH,
 }, ":")
+-- Highlight the 80th and 100th columns
+vim.opt.colorcolumn = "80,100"
+vim.cmd([[highlight ColorColumn ctermbg=lightgrey guibg=lightgrey]])

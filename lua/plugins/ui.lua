@@ -63,7 +63,7 @@ return {
 
   -- animations
   {
-    "echasnovski/mini.animate",
+    "nvim-mini/mini.animate",
     relodable = true,
     event = "VeryLazy",
     opts = function(_, opts)
