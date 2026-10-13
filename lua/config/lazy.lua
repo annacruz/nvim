@@ -22,12 +22,16 @@ require("lazy").setup({
       import = "lazyvim.plugins",
       opts = {
         -- colorscheme = "eolarized-osaka",
-        colorscheme = "tokyonight-moon",
+        -- colorscheme = "tokyonight-moon",
         -- colorscheme = "dracula-blade",
+        -- colorscheme = "dracula_pro_alucard",
+        colorscheme = "tokyonight-day",
       },
     },
     -- some extra modules
     { import = "lazyvim.plugins.extras.lang.json" },
+    { import = "lazyvim.plugins.extras.lang.typescript" },
+    { import = "lazyvim.plugins.extras.lang.ruby" },
     -- import/override with your plugins
     { import = "plugins" },
   },

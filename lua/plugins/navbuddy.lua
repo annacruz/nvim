@@ -6,8 +6,17 @@ return {
       dependencies = {
         "SmiteshP/nvim-navic",
         "MunifTanjim/nui.nvim",
+        "neovim/nvim-lspconfig",
       },
-      opts = { lsp = { auto_attach = true } },
     },
+  },
+  event = "LSPAttach",
+  config = {
+    lsp = {
+      auto_attach = true,
+    },
+  },
+  keys = {
+    { "<leader>j", "<cmd>Navbuddy<CR>", desc = "Navbuddy" },
   },
 }
